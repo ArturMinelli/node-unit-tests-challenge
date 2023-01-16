@@ -51,7 +51,7 @@ describe('Get Balance', () => {
     })
 
     const balanceResponse = await getBalanceUseCase.execute({
-      user_id: user.id as string
+      user_id
     })
 
     const { balance, statement } = balanceResponse
